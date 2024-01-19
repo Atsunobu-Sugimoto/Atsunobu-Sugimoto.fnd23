@@ -1,1 +1,129 @@
-test
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>final_report</title>
+  <link rel="shortcut icon" href="https://dig.codechrysalis.io/branding/dig/favicon.ico">
+  <link rel="stylesheet" href="final.css">
+</head>
+<body>
+  <h1>TEST</h1>
+  
+  <div class="tab">
+    <ul class="tab_menu">
+      <li class="tab_menu-item is-active" data-tab="01">自己紹介</li>
+      <li class="tab_menu-item" data-tab="02">🐊🐊🐊</li>
+      <li class="tab_menu-item" data-tab="03">menu3</li>
+    </ul>
+    <div class="tab_panel">
+      <div class="tab_panel-box tab_panel-box001 is-show" data-panel="01">
+        <p class="tab_panel-text">初期表示のタブです。</p>
+        <!-- アコーディオン ここから-->
+        <section class="qa sec">
+          <h2 class="pageSubTitle pageSubTitle--center">
+            FAQ
+            <span>よくある質問</span>
+          </h2>
+            <div class="qa__box">
+              <dl>
+                <dt class="js-qa__parent"> <!-- jsで取得する要素 -->
+                    <span>Q</span>
+                    <h3 class="pageSubTitle2">名前</h3>
+                    <div class="crossBar"></div>
+                </dt>
+                
+                <dd class="qa__child">
+                    <span>A</span>
+                    <p class="contentText">杉本　篤信</p>
+                </dd>
+              </dl>
+            </div>
+            <div class="qa__box">
+              <dl>
+                <dt class="js-qa__parent">
+                    <span>Q</span>
+                    <h3 class="pageSubTitle2">住んでいる場所</h3>
+                    <div class="crossBar"></div>
+                </dt>
+    
+                <dd class="qa__child">
+                    <span>A</span>
+                    <p class="contentText">名古屋市中川区</p>
+                </dd>
+              </dl>
+            </div>
+            <div class="qa__box">
+              <dl>
+                <dt class="js-qa__parent">
+                    <span>Q</span>
+                    <h3 class="pageSubTitle2">年齢</h3>
+                    <div class="crossBar"></div>
+                </dt>
+    
+                <dd class="qa__child">
+                    <span>A</span>
+                    <p class="contentText">51</p>
+                </dd>
+              </dl>
+            </div>
+            <!-- <div class="qa__box">
+              <dl>
+                <dt class="js-qa__parent">
+                    <span>Q</span>
+                    <h3 class="pageSubTitle2">土日祝日でも施工していますか？</h3>
+                    <div class="crossBar"></div>
+                </dt>
+    
+                <dd class="qa__child">
+                    <span>A</span>
+                    <p class="contentText">テスト解答</p>
+                </dd>
+              </dl>
+            </div> -->
+            <!-- <div class="qa__box">
+              <dl>
+                <dt class="js-qa__parent">
+                    <span>Q</span>
+                    <h3 class="pageSubTitle2">引越後でもガラスフィルムの施工は可能ですか？</h3>
+                    <div class="crossBar"></div>
+                </dt>
+    
+                <dd class="qa__child">
+                    <span>A</span>
+                    <p class="contentText">テスト解答</p>
+                </dd>
+              </dl>
+            </div> -->
+            <!-- <div class="qa__box">
+              <dl>
+                <dt class="js-qa__parent">
+                    <span>Q</span>
+                    <h3 class="pageSubTitle2">現物サンプルを見たい時にはどうすれば良いですか？</h3>
+                    <div class="crossBar"></div>
+                </dt>
+    
+                <dd class="qa__child">
+                    <span>A</span>
+                    <p class="contentText">テスト解答</p>
+                </dd>
+              </dl>
+            </div> -->
+    
+        </section>
+        <!-- アコーディオン　ここまで -->
+      </div>
+      <div class="tab_panel-box tab_panel-box002" data-panel="02">
+        <p class="tab_panel-text">2枚目のタブです。</p>
+      </div>
+      <div class="tab_panel-box tab_panel-box003" data-panel="03">
+        <p class="tab_panel-text">3枚目のタブです。</p>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="final.js"></script>
+</body>
+</html>
