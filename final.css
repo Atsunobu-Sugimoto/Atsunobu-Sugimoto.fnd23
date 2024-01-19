@@ -1,0 +1,211 @@
+.tab {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+/* タブメニュー */
+.tab_menu {
+  display: flex;
+  align-items: flex-end; /* メニューを下揃え */
+  justify-content: center;
+  min-height: 50px; /* メニュー切替時にタブがズレないように */
+  padding: 0;
+  margin: 0;
+}
+
+.tab_menu-item {
+  list-style: none;
+  width: 200px;
+  padding: 8px 5px; /* メニューに高さを付ける */
+  text-align: center;
+  margin-right: 6px;
+  background-color: #cdcdcd;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  transition: all .3s; /* アニメーション */
+}
+
+.tab_menu-item:last-of-type {
+  margin-right: 0px;
+}
+
+/* is-activeがついている時のスタイル */
+.tab_menu-item.is-active {
+  background-color: rgba(48, 172, 249);
+  color: #ffffff;
+  padding: 12px 5px;
+}
+
+/* タブパネル */
+.tab_panel {
+ width: 100%;
+}
+
+.tab_panel-box {
+  min-height: 400px;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.tab_panel-box001 {
+  background-color: rgb(205, 246, 246);
+  display: none;
+}
+
+.tab_panel-box002 {
+  background-color: rgb(249 227 243);
+  display: none;
+}
+
+.tab_panel-box003 {
+  background-color: rgb(200, 248, 195);
+  display: none;
+}
+
+/* is-showがついている時のスタイル */
+.tab_panel-box.is-show {
+  display: block;
+}
+
+/* アコーディオン ここから*/
+body {
+  background-color: #F4F6F6;
+}
+.sec {
+  width: auto;
+  padding: 0 20px;
+}
+.pageSubTitle {
+  font-size: 40px;
+  line-height: 1.75;
+  font-weight: 900;
+  font-style: normal;
+  position: relative;
+}
+.pageSubTitle::after {
+  content: "";
+  display: block;
+  width: 74.6px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 35.2px;
+}
+.pageSubTitle > span {
+  display: block;
+  font-size: 13px;
+  line-height: 1.75;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 5px;
+}
+.pageSubTitle--center {
+  text-align: center;
+}
+
+/* FAQパーツ */
+.pageSubTitle2 {
+  font-size: 23px;
+  line-height: 1.7;
+  font-weight: 400;
+  font-style: normal;
+  color: #4D4D4D;
+}
+.contentText {
+  font-size: 23px;
+  line-height: 1.7;
+  font-weight: 400;
+  font-style: normal;
+  color: #4D4D4D;
+}
+.qa {
+  padding-top: 180px;
+  padding-bottom: 278px;
+}
+.qa__box {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+.qa__box > dl > dt {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  position: relative;
+}
+.qa__box > dl > dt .crossBar {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+}
+.qa__box > dl > dt .crossBar::before {
+  content: "";
+  display: inline-block;
+  width: 1.6px;
+  height: 100%;
+  background-color: #4D4D4D;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-origin: center center; /* 中心を基準にtransform */
+  transform: translateX(-50%) rotate(0deg);
+  transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.qa__box > dl > dt .crossBar::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1.6px;
+  background-color: #4D4D4D;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.qa__box > dl > dt > span {
+  font-size: 28px;
+  line-height: 1.75;
+  font-weight: 500;
+  font-style: normal;
+  color: #5FB1DE;
+  margin-right: 23px;
+}
+
+.qa__box > dl > dd {
+  margin: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 0px 30px; /* paddingの上下を0にする */
+  max-height: 0; /* max-heightを0にする、レスポンシブ対応 */
+  overflow: hidden;  /* overflow: hidden;を付けるのがポイント */
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.qa__box > dl > dd > span {
+  font-size: 28px;
+  line-height: 1.7;
+  font-weight: 500;
+  font-style: normal;
+  color: #5FB1DE;
+  margin-right: 23px;
+}
+
+
+/* アニメーション後のスタイル */
+.qa__box > dl > dd.is-open { /* heightとpaddingをアニメーション */
+  max-height: 100px;
+  padding: 10px 30px;
+}
+/* ＋ボタンのアニメーション */
+.qa__box > dl > dt.is-open .crossBar::before {
+  transform: translateX(-50%) rotate(90deg);  /* 90度回転 */
+}
+/* アコーディオン　ここまで */
