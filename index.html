@@ -8,122 +8,147 @@
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="final.css">
 </head>
-<body>
-  <h1>TEST</h1>
-  
-  <div class="tab">
-    <ul class="tab_menu">
+
+<body>  
+
+  <header>
+    <h1><img src="0.png"></h1>
+  </header>
+
+  <main>
+    <div class="tab">
+      <ul class="tab_menu">
       <li class="tab_menu-item is-active" data-tab="01">自己紹介</li>
       <li class="tab_menu-item" data-tab="02">🐊🐊🐊</li>
-      <li class="tab_menu-item" data-tab="03">menu3</li>
-    </ul>
-    <div class="tab_panel">
-      <div class="tab_panel-box tab_panel-box001 is-show" data-panel="01">
-        <p class="tab_panel-text">初期表示のタブです。</p>
-        <!-- アコーディオン ここから-->
-        <section class="qa sec">
-          <h2 class="pageSubTitle pageSubTitle--center">
-            FAQ
-            <span>よくある質問</span>
-          </h2>
+      <li class="tab_menu-item" data-tab="03">まとめ</li>
+      </ul>
+      <div class="tab_panel">
+        <div class="tab_panel-box tab_panel-box001 is-show" data-panel="01">
+          <!-- アコーディオン ここから-->
+          <section class="qa sec">
+            <div class = "flex">
+              <figure class="image"><img
+                src="1.jpg" id = face
+                alt = ""></figure>
+                <p class="text">
+                  <br>
+                  1991年に入社後、組立、塗装、成形、プレス、板金と<br>
+                  約31年、保全をしてきました。<br>
+                  2023年から保全のデジタル化に取り組んでいます。
+                </p>
+            </div>
+            <h2 class="pageSubTitle--center">
+              Pro File
+            </h2>
             <div class="qa__box">
               <dl>
                 <dt class="js-qa__parent"> <!-- jsで取得する要素 -->
-                    <span>Q</span>
-                    <h3 class="pageSubTitle2">名前</h3>
-                    <div class="crossBar"></div>
+                  <span>Q</span>
+                  <h3 class="pageSubTitle2">名前</h3>
+                  <div class="crossBar"></div>
                 </dt>
-                
                 <dd class="qa__child">
-                    <span>A</span>
-                    <p class="contentText">杉本　篤信</p>
+                  <span>A</span>
+                    <p class="contentText">杉本 篤信</p>
                 </dd>
               </dl>
             </div>
             <div class="qa__box">
               <dl>
                 <dt class="js-qa__parent">
-                    <span>Q</span>
-                    <h3 class="pageSubTitle2">住んでいる場所</h3>
-                    <div class="crossBar"></div>
-                </dt>
-    
+                  <span>Q</span>
+                  <h3 class="pageSubTitle2">住んでいる場所</h3>
+                  <div class="crossBar">
+                  </div>
+                </dt>       
                 <dd class="qa__child">
-                    <span>A</span>
-                    <p class="contentText">名古屋市中川区</p>
+                  <span>A</span>
+                  <p class="contentText">名古屋市中川区</p>
                 </dd>
               </dl>
             </div>
             <div class="qa__box">
               <dl>
                 <dt class="js-qa__parent">
-                    <span>Q</span>
-                    <h3 class="pageSubTitle2">年齢</h3>
-                    <div class="crossBar"></div>
-                </dt>
-    
+                  <span>Q</span>
+                  <h3 class="pageSubTitle2">年齢</h3>
+                  <div class="crossBar">
+                  </div>
+                </dt>         
                 <dd class="qa__child">
-                    <span>A</span>
-                    <p class="contentText">51</p>
+                  <span>A</span>
+                  <p class="contentText">51 歳</p>
+                </dd>
+              </dl>
+            </div>      
+            </section>
+            <!-- アコーディオン　ここまで -->
+        </div>
+        <div class="tab_panel-box tab_panel-box002" data-panel="02">
+          <p class="tab_panel-text">ワニ放出！</p>
+          <iframe src="gators.html" width="600" height="400"></iframe>
+        </div>
+        <div class="tab_panel-box tab_panel-box003" data-panel="03">
+          <!-- アコーディオン ここから-->
+          <section class="qa sec">    
+            <h2 class="pageSubTitle--center">
+              DIGでかかわった皆様へ
+            </h2>
+            <div class="qa__box">
+              <dl>
+                <dt class="js-qa__parent"> <!-- jsで取得する要素 -->
+                  <span>1.</span>
+                  <h3 class="pageSubTitle2">講師の皆様へ</h3>
+                  <div class="crossBar"></div>
+                </dt>
+                <dd class="qa__child">
+                  <span></span>
+                  <p class="contentText">
+                    親切丁寧に教えてくださり、有難う御座いました。
+                    思い通りに動いた時の達成感はすごいものがあります。
+                    これで終りにするのではなく今後の仕事に生かしていきます。
                 </dd>
               </dl>
             </div>
-            <!-- <div class="qa__box">
+            <div class="qa__box">
               <dl>
                 <dt class="js-qa__parent">
-                    <span>Q</span>
-                    <h3 class="pageSubTitle2">土日祝日でも施工していますか？</h3>
-                    <div class="crossBar"></div>
-                </dt>
-    
+                  <span>2.</span>
+                  <h3 class="pageSubTitle2">一緒に受講した方々へ</h3>
+                  <div class="crossBar"></div>
+                </dt>       
                 <dd class="qa__child">
-                    <span>A</span>
-                    <p class="contentText">テスト解答</p>
+                  <span></span>
+                  <p class="contentText">ペアプロ時に、見放さずに、根気よく教えて頂きとても助かりました。今後もよろしくお願いします。</p>
                 </dd>
               </dl>
-            </div> -->
-            <!-- <div class="qa__box">
+            </div>
+            <div class="qa__box">
               <dl>
                 <dt class="js-qa__parent">
-                    <span>Q</span>
-                    <h3 class="pageSubTitle2">引越後でもガラスフィルムの施工は可能ですか？</h3>
-                    <div class="crossBar"></div>
-                </dt>
-    
+                  <span>3.</span>
+                  <h3 class="pageSubTitle2">受講を承諾してくれた上司の方々へ</h3>
+                  <div class="crossBar"></div>
+                </dt>    
                 <dd class="qa__child">
-                    <span>A</span>
-                    <p class="contentText">テスト解答</p>
+                  <span></span>
+                  <p class="contentText">この教育で得た知識を使い、今後の仕事に生かしていきます。</p>
                 </dd>
               </dl>
-            </div> -->
-            <!-- <div class="qa__box">
-              <dl>
-                <dt class="js-qa__parent">
-                    <span>Q</span>
-                    <h3 class="pageSubTitle2">現物サンプルを見たい時にはどうすれば良いですか？</h3>
-                    <div class="crossBar"></div>
-                </dt>
-    
-                <dd class="qa__child">
-                    <span>A</span>
-                    <p class="contentText">テスト解答</p>
-                </dd>
-              </dl>
-            </div> -->
-    
-        </section>
-        <!-- アコーディオン　ここまで -->
-      </div>
-      <div class="tab_panel-box tab_panel-box002" data-panel="02">
-        <p class="tab_panel-text">2枚目のタブです。</p>
-      </div>
-      <div class="tab_panel-box tab_panel-box003" data-panel="03">
-        <p class="tab_panel-text">3枚目のタブです。</p>
-
+            </div>     
+          </section>
+          <!-- アコーディオン　ここまで -->
+        </div>
       </div>
     </div>
-  </div>
-
+  </main>
+  
+  <aside>
+  </aside>
+  
+  <footer>
+  </footer>
+  
   <script src="final.js"></script>
 </body>
 </html>
