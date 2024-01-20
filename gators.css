@@ -1,0 +1,15 @@
+#greenBox {
+  width:200px;
+  height:200px;
+  background-color: green;
+  margin:auto;
+}
+#blueBox {
+  width:300px;
+  background-color: blue;
+  margin:auto;
+}
+
+div p {
+  display:inline-block;
+}
