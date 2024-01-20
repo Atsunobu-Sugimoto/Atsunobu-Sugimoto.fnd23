@@ -1,7 +1,7 @@
 .tab {
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 120px;
+  margin-top: 1px;
 }
 
 /* タブメニュー */
@@ -21,7 +21,7 @@
   text-align: center;
   margin-right: 6px;
   background-color: #cdcdcd;
-  border-top-left-radius: 50px;
+  border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   cursor: pointer;
   transition: all .3s; /* アニメーション */
@@ -45,7 +45,7 @@
 
 .tab_panel-box {
   min-height: 400px;
-  padding: 10px 30px;
+  padding: 20px 30px;
   border-radius: 10px;
 }
 
@@ -120,7 +120,7 @@ body {
   color: #4D4D4D;
 }
 .qa {
-  padding-top: 180px;
+  padding-top: 0px;
   padding-bottom: 278px;
 }
 .qa__box {
@@ -209,3 +209,43 @@ body {
   transform: translateX(-50%) rotate(90deg);  /* 90度回転 */
 }
 /* アコーディオン　ここまで */
+
+/* headerセンター */
+header {
+  width: auto;
+  margin: auto;
+  background-color: cadetblue;
+}
+h1 {
+  text-align: center;
+  padding: 10px 0px 1px;
+}
+
+/* 顔写真丸加工 */
+#face {
+  border-radius: 50%
+}
+
+/* 横並び */
+
+.flex {
+  display: flex; /*横並び*/
+}
+.flex .image {
+  width: 150px; /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+}
+.flex .image img {
+  width: 100%;
+  height: auto;
+}
+.flex .text {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+body {
+  margin: 20px;
+  padding: 0;
+}
