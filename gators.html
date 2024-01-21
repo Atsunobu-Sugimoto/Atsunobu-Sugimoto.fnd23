@@ -9,12 +9,73 @@
  
   <body>
     <div id="greenBox">
+
+      <div>
+      <form id="displayItems">
+        <label><input type="radio" name="items" value="🐊" checked>🐊</label>
+        <label><input type="radio" name="items" value="🐳">🐳</label>
+        <label><input type="radio" name="items" value="💣">💣</label>
+        <label><input type="radio" name="items" value="💥">💥</label>
+        <label><input type="radio" name="items" value="🔀">🔀:random</label>
+      </form>
+      </div>
+
+      <script>
+      function valueChange(event){
+        let checkValue = displayItems.elements['items'].value;
+        console.log('選択されているのは ' + checkValue + ' です');
+      }
+
+      let displayItems = document.getElementById('displayItems');
+      displayItems.elements[1].checked = true;
+      displayItems.addEventListener('change', valueChange);
+      </script>
+
+
+      <!-- <div>
+        <form id = "displayItems">
+          <label class="my-radio">
+            <input type="radio" name="items" value="gators" checked>
+            <span class="radio-mark"></span>
+            🐊
+          </label>
+          
+          <label class="my-radio">
+            <input type="radio" name="items" value="whale">
+            <span class="radio-mark"></span>
+            🐳
+          </label>
+          
+          <label class="my-radio">
+            <input type="radio" name="items" value="bomb">
+            <span class="radio-mark"></span>
+            💣
+          </label>
+          
+          <label class="my-radio">
+            <input type="radio" name="items" value="explosin">
+            <span class="radio-mark"></span>
+            💥
+          </label>
+          
+          <label class="my-radio">
+            <input type="radio" name="items" value="random">
+            <span class="radio-mark"></span>
+            🔀:random
+          </label>
+        </form>
+      </div>
+       -->
+      
       <input type="text" id = "textBox" name = "textBox" placeholder="数字を入力してください">
       <input type="button" id="outputgater" value="ワニ放出！" onclick="outputGator()">
     </div>
  
     <div id="blueBox"></div>
-   
+
+
+
+
     <script src="gators.js"></script>
   </body>
 </html>
